@@ -31,3 +31,4 @@ COMPLETED:
 -Create operator function. This function takes the operator and 2 numbers and 
 calls to one of the Arithmetic functions
 -Create calculator in HTML using button tags. (Numbers, Operators, Equal/Clear buttons)
+-Create function to populate display screen (Create variable for display text for usage)
