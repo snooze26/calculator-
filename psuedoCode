@@ -1,0 +1,24 @@
+-Create Arithmetic functions (Add, Sub, Multiply, Divide)
+-Create variables for calculator operation (a, operator, b)
+-Create operator function. This function takes the operator and 2 numbers and 
+calls to one of the Arithmetic functions
+-Create calculator in HTML using button tags. (Numbers, Operators, Enter/Clear buttons)
+-Create function to populate display screen (Create variable for display text for usage)
+-Store a and b, utilize the selected operator and then use the operator function when the
+ "=" key is pressed  
+        -Upate the display screen with the "solution" 
+        -Store all the values and call the operate function
+-Initialize CSS
+
+
+
+WATCH FOR:
+-Round recieved 
+-Pressing = before entering all numbers or an operator causing a problem
+-Pressing "clear" should wipe any existing data
+-Give error message for divid by 0; don't let it crash calculator
+
+OPTIONAL FEATURES
+-Floating point numbers if needed, one at a time
+-Backspace button
+-Add keyboard support
