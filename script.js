@@ -77,20 +77,29 @@ function operatorClick(event){
 }
 
 function equalClick(){
-    
+    if(num1 !== null && operator !== null && currentInput !== ""){
+        num2 = parseFloat(currentInput);
+        const result = operate(num1, operator, num2);
+        screenText.textContent = result;
+        num1 = result;
+        num2 = null;
+        operator = null;
+        currentInput = "";
+    }
 }
 
 // event listeners
 for(const number of numberBtn) {
-    const value = number.addEventListener("click", numberInput);
+    const value = number.addEventListener("click", numberClick);
     console.log(number);
 }
 
 for(const op of operatorBtn) {
-    const value = op.addEventListener("click", operatorInput);
+    const value = op.addEventListener("click", operatorClick);
     console.log(value);
 }
 
+equalBtn.addEventListener("click", equalClick);
 
 
 //let result = operate(num1, "/", num2);
