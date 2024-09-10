@@ -1,14 +1,15 @@
 
 const screenText = document.querySelector("#screen");
-const numberKeys = document.querySelectorAll("#num-btn");
+const numberBtn = document.querySelectorAll("#num-btn");
+const operatorBtn = document.querySelectorAll("#op-btn");
+const clearBtn = document.querySelector("#clear-btn");
+const equalBtn = document.querySelector("#equal-btn");
 
-let num1 = 15;
-let num2 = 0;
+let num1 = null;
+let num2 = null;
+let operator = null;
+let currentInput = "";
 
-
-let operator = "+";
-let a = 0;
-let b = 0; 
 
 function add(a, b) {
     return a + b;
@@ -25,10 +26,11 @@ function times(a, b) {
 function divide(a, b) {
     if(a === 0 || b === 0){
         alert("ERROR: Can not use 0 to divide");
+        return "ERROR";
     }
     return a / b; 
 }
-
+//turn into case format
 function operate(a, op, b) {
     num1 = a; 
     num2 = b; 
@@ -49,10 +51,11 @@ function operate(a, op, b) {
 function popScreen(event){
 
     const number = event.target.textContent;
-    screenText.textContent += number;
+    currentInput += number;
+    screenText.textContent = currentInput;
 
 } 
-for(const number of numberKeys) {
+for(const number of numberBtn) {
     const value = number.addEventListener("click", popScreen);
     console.log(number);
 }
