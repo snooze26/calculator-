@@ -22,3 +22,11 @@ OPTIONAL FEATURES
 -Floating point numbers if needed, one at a time
 -Backspace button
 -Add keyboard support
+
+
+COMPLETED:
+-Create Arithmetic functions (Add, Sub, Multiply, Divide)
+-Give error message for divid by 0; don't let it crash calculator
+-Create variables for calculator operation (a, operator, b)
+-Create operator function. This function takes the operator and 2 numbers and 
+calls to one of the Arithmetic functions
