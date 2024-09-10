@@ -2,7 +2,7 @@
 -Create variables for calculator operation (a, operator, b)
 -Create operator function. This function takes the operator and 2 numbers and 
 calls to one of the Arithmetic functions
--Create calculator in HTML using button tags. (Numbers, Operators, Enter/Clear buttons)
+-Create calculator in HTML using button tags. (Numbers, Operators, Equal/Clear buttons)
 -Create function to populate display screen (Create variable for display text for usage)
 -Store a and b, utilize the selected operator and then use the operator function when the
  "=" key is pressed  
@@ -30,3 +30,4 @@ COMPLETED:
 -Create variables for calculator operation (a, operator, b)
 -Create operator function. This function takes the operator and 2 numbers and 
 calls to one of the Arithmetic functions
+-Create calculator in HTML using button tags. (Numbers, Operators, Equal/Clear buttons)

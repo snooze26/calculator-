@@ -43,5 +43,5 @@ function operate(a, op, b) {
 }
 
 
-let result = operate(num1, "/", num2);
-console.log(result);
+//let result = operate(num1, "/", num2);
+//console.log(result);
