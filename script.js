@@ -48,16 +48,47 @@ function operate(a, op, b) {
 }
 
 //capturing value to populate screen text
-function popScreen(event){
+function numberClick(event){
 
     const number = event.target.textContent;
     currentInput += number;
     screenText.textContent = currentInput;
 
 } 
+
+function operatorClick(event){
+    if(currentInput === "") return; 
+
+    if(num1 === null){
+        num1 = parseFloat(currentInput);
+        operator = event.target.textContent;
+        currentInput = "";
+        screenText.textContent = operator;
+    }else if(num2 === null && currentInput !== ""){
+        num2 = parseFloat(currentInput);
+        const result = operate(num1, operator, num2);
+        screenText.textContent = result;
+        num1 = result;
+        num2 = null;
+        operator = event.target.textContent;
+        currentInput = "";
+
+    }
+}
+
+function equalClick(){
+    
+}
+
+// event listeners
 for(const number of numberBtn) {
-    const value = number.addEventListener("click", popScreen);
+    const value = number.addEventListener("click", numberInput);
     console.log(number);
+}
+
+for(const op of operatorBtn) {
+    const value = op.addEventListener("click", operatorInput);
+    console.log(value);
 }
 
 
