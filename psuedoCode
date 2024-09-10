@@ -8,6 +8,7 @@ calls to one of the Arithmetic functions
  "=" key is pressed  
         -Upate the display screen with the "solution" 
         -Store all the values and call the operate function
+Add the clear button's function;
 -Initialize CSS
 
 
@@ -32,3 +33,7 @@ COMPLETED:
 calls to one of the Arithmetic functions
 -Create calculator in HTML using button tags. (Numbers, Operators, Equal/Clear buttons)
 -Create function to populate display screen (Create variable for display text for usage)
+-Store a and b, utilize the selected operator and then use the operator function when the
+ "=" key is pressed  
+        -Upate the display screen with the "solution" 
+        -Store all the values and call the operate function
