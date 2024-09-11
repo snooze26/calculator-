@@ -13,6 +13,11 @@ body {
     align-items: center;
 }
 
+button {
+    border-style: inset;
+    font-size: larger;
+}
+
 div#calculator {
     display: flex;
     flex-direction: column;
@@ -58,6 +63,7 @@ div#operators {
     margin-right: auto;
     height: 100%;
     width: 20%;
+    margin: 5px;
 }
 
 button#op-btn {
@@ -76,22 +82,30 @@ button#equal-btn {
 
 
 div#numbers {
+    align-items: center;
+    background-color: rgb(121, 121, 255);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 2px;
-}
+    width: 80%;
+    height: 100%;
 
-div#operators {
-    flex-direction: column;
-    
 }
 
 button#num-btn {
-    height: margin 5px;
-    margin: 3.1px;
+        height: margin 5px;
+        margin: 5px;
+        height: 100%;
+        background-color: red;
+        color: white;
 }
 
-div#calculator {
-    display: flex;
-    flex-direction: column;
+button#clear-btn {
+    grid-column: span 2;
+    height: 90%;
+    background: red;
+    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
 }
