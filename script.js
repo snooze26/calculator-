@@ -1,6 +1,5 @@
 //variables
-const screenText = document.querySelector("#screen");
-screenText.textContent = "0";
+const screenText = document.querySelector("#screen-txt");
 const numberBtn = document.querySelectorAll("#num-btn");
 const operatorBtn = document.querySelectorAll("#op-btn");
 const clearBtn = document.querySelector("#clear-btn");
@@ -117,5 +116,4 @@ equalBtn.addEventListener("click", equalClick);
 clearBtn.addEventListener("click", clearClick);
 
 
-//let result = operate(num1, "/", num2);
-//console.log(result);
+//Styling

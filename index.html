@@ -3,14 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="styles-1.css">
 </head>
 <body>
     <div id="calculator">
-        <div id="screen"></div>
+        <div id="screen">
+            <p id="screen-txt">0</p>
+        </div>
         <div id="keys">
+            <div id="operators">
+                <button id="op-btn">+</button>
+                <button id="op-btn">-</button>
+                <button id="op-btn">*</button>
+                <button id="op-btn">/</button>
+                <button id="equal-btn">=</button>
+            </div>
             <div id="numbers">
                 <button id="num-btn">1</button>
                 <button id="num-btn">2</button>
@@ -22,16 +30,9 @@
                 <button id="num-btn">8</button>
                 <button id="num-btn">9</button>
                 <button id="num-btn">0</button>
-            </div>
-            <div id="operators">
-                <button id="op-btn">+</button>
-                <button id="op-btn">-</button>
-                <button id="op-btn">*</button>
-                <button id="op-btn">/</button>
-                <button id="equal-btn">=</button>
-            </div>
-            <div id="Clear">
-                <button id="clear-btn">Clear</button>
+                <div id="Clear">
+                    <button id="clear-btn">Clear</button>
+                </div>
             </div>
         </div>
     </div>
