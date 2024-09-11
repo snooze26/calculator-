@@ -1,5 +1,6 @@
 //variables
 const screenText = document.querySelector("#screen");
+screenText.textContent = "0";
 const numberBtn = document.querySelectorAll("#num-btn");
 const operatorBtn = document.querySelectorAll("#op-btn");
 const clearBtn = document.querySelector("#clear-btn");
@@ -24,7 +25,7 @@ function times(a, b) {
 } 
 
 function divide(a, b) {
-    if(a === 0 || b === 0){
+    if(a === 0){
         alert("ERROR: Can not use 0 to divide");
         return "ERROR";
     }
@@ -74,7 +75,7 @@ function operatorClick(event) {
     }
 }
 
-function equalClick() {
+function equalClick(event) {
     if(num1 !== null && operator !== null && currentInput !== ""){
         num2 = parseFloat(currentInput);
         const result = operate(num1, operator, num2);
@@ -87,16 +88,33 @@ function equalClick() {
     }
 }
 
+function clearClick(event) {
+    
+    if(num1 !== null || operator !== null || currentInput !== ""){
+        num1 = null;
+        num2 = null;
+        operator = null;
+        currentInput = ""; 
+        screenText.textContent = 0;
+
+    }
+}
+
+console.log("Here is num1 out method ", num1);
+console.log("num 2 ", num2);
+console.log("Here is input out method ", currentInput);
+console.log("Here is num1 out method ", operator);
 // event listeners
 for(const number of numberBtn) {
-    const value = number.addEventListener("click", numberClick);
+    number.addEventListener("click", numberClick);
 }
 
 for(const op of operatorBtn) {
-    const value = op.addEventListener("click", operatorClick);
+    op.addEventListener("click", operatorClick);
 }
 
 equalBtn.addEventListener("click", equalClick);
+clearBtn.addEventListener("click", clearClick);
 
 
 //let result = operate(num1, "/", num2);

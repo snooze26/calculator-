@@ -37,3 +37,10 @@ calls to one of the Arithmetic functions
  "=" key is pressed  
         -Upate the display screen with the "solution" 
         -Store all the values and call the operate function
+
+
+the process of a clear button:
+needs to clear all data (num1, op, num2); 
+first check to see if there are any inputs; if not then return
+second if there are values within the ANY of the data variables then remove the value and 
+clear the screen context 
