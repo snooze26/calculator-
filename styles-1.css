@@ -43,6 +43,38 @@ p#screen-txt {
     font-size: 20px;
 }
 
+div#keys {
+    height: margin-top;
+    display: flex;
+    margin-bottom: -10em;
+    height: 70%;
+    width: 90%;
+    background-color: rgb(121, 121, 255);
+    justify-content: center;
+}
+
+div#operators {
+    flex-direction: column;
+    margin-right: auto;
+    height: 100%;
+    width: 20%;
+}
+
+button#op-btn {
+    height: 20%;
+    width: 100%;
+    background: red;
+    color: white;
+}
+
+button#equal-btn {
+    height: 20%;
+    width: 100%;
+    background: red;
+    color: white;
+}
+
+
 div#numbers {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
