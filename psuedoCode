@@ -27,7 +27,6 @@ OPTIONAL FEATURES
 
 COMPLETED:
 -Create Arithmetic functions (Add, Sub, Multiply, Divide)
--Give error message for divid by 0; don't let it crash calculator
 -Create variables for calculator operation (a, operator, b)
 -Create operator function. This function takes the operator and 2 numbers and 
 calls to one of the Arithmetic functions
@@ -37,10 +36,6 @@ calls to one of the Arithmetic functions
  "=" key is pressed  
         -Upate the display screen with the "solution" 
         -Store all the values and call the operate function
+Add the clear button's function;
+-Initialize CSS
 
-
-the process of a clear button:
-needs to clear all data (num1, op, num2); 
-first check to see if there are any inputs; if not then return
-second if there are values within the ANY of the data variables then remove the value and 
-clear the screen context 
